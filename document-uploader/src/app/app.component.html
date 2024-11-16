@@ -339,19 +339,28 @@
   <link rel="stylesheet" href="app.component.css">
 </head>
 <body>
-
-  <main>
-    <div>
-      <h1>Welcome to Our Document Uploader</h1>
-    </div>
-    <div>
-      <p>Please upload your file below</p>
-      <div class="file-upload-container">
-        <label for="file">File Upload</label>
-        <input type="file" name="file" id="file" />
+  <main class="mainbody">
+    <div class ='main'>
+      <div>
+        <h1>Welcome to Our Document Uploader</h1>
+      </div>
+      <div>
+        <p>Please upload your file below</p>
+        <div class="file-upload-container">
+          <form>
+            <label for="file">File Upload</label>
+            <input type="file" name="file" id="file" />
+            <input type="submit" value="submit"/>
+          </form>
+        </div>
       </div>
     </div>
+    <div class='main'>
+      <h1>Files</h1>
+      <p>Files uploaded will be shown here</p>
+      
+    </div>
+    
   </main>
-
 </body>
 <router-outlet />
